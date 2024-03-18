@@ -34,5 +34,7 @@ function main() {
    throw new Error(`Unknown command ${command}`);
  }
 }
-git commit --allow-empty -m 'test' && git push origin master
+git add .
+git commit -m "pass 1st stage" # any msg
+git push origin master
 main();
